@@ -14,15 +14,15 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/product', productRoutes); 
 
-app.post("/",(req, res) => {
+app.post("/product",(req, res) => {
     res.send("Berhasil Menambahkan Produk")
   })
 
-app.put("/",(req, res) => {
+app.put("/product",(req, res) => {
     res.send("Berhasil Mengubah Produk")
   })
 
-app.delete("/",(req, res) => {
+app.delete("/product",(req, res) => {
     res.send("Berhasil Menghapus Produk")
   })
 
