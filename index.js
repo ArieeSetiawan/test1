@@ -12,10 +12,6 @@ app.use(logger);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get('/:name', (req, res) => {
-    res.render('index', { name: req.params.name });
-  })
-
 app.use('/product', productRoutes); 
 
 app.post("/",(req, res) => {
